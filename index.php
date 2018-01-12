@@ -10,7 +10,8 @@ $f3 ->set('DEBUG', 3);
 
 //Define a default route
 $f3->route('GET /', function(){
-    echo '<h1> Pet home </h1>';
+    $view = new View;
+    echo $view->render('Views/home.html');
 });
 
 //Define a page1 route
